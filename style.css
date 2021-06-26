@@ -35,6 +35,8 @@ body {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* A few media query to set some font sizes at different screen sizes.
@@ -345,8 +347,9 @@ footer i {
 }
 
 #navbar a:hover {
-  background-color: rgb(190, 16, 3);
+  background-color: rgb(229, 235, 234);
   color: black;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 400px) {
   nav {
@@ -402,5 +405,9 @@ footer i {
 }
 
 #video {
+  min-width: 95%;
   padding-bottom: 300px;
+}
+.wel-head {
+  font-family: "Helvetica Neue", sans-serif;
 }

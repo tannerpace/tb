@@ -1,10 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <title>Tanner Bleakley</title>
 </head>
+
+<body>
+
+</body>
+
+
+
 <div class="body"></div>
 
 <nav id="navbar" class="nav">
@@ -28,7 +43,7 @@
 
 
 <div class="welcome-section" id="welcome-section">
-    <h1>Welcome</h1>
+    <h1 class="wel-head">Welcome</h1>
     <p>Hi! I am Tanner a fullstack Web Developer</p><br>
     <p class="smallgrey" style="margin-top: -20px;">
     <div class="type_box" style="perspective:193px;-webkit-perspective:193px;">
@@ -49,9 +64,9 @@
     </h2>
 
 
-    <a> <iframe id="video" width="auto" height="315" class="videocontainer"
+    <a> <iframe id="video" width="device" height="400px" class="videocontainer"
             src="https://www.youtube.com/embed/_qtbewGnqAU" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; overflow-hidden; picture-in-picture"
             allowfullscreen></iframe></a>
 
 
@@ -110,7 +125,7 @@
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
-            document.getElementById("navbar").style.top = "-90px";
+            document.getElementById("navbar").style.top = "-80px";
         }
         prevScrollpos = currentScrollPos;
     }
@@ -119,11 +134,11 @@
         (function () {
             var CharacterPos = 0;
             var MsgBuffer = "";
-            var TypeDelay = 100;
-            var NxtMsgDelay = 981;
+            var TypeDelay = 125;
+            var NxtMsgDelay = 999;
             var MsgIndex = 0;
             var delay;
-            var MsgArray = ["Hello, my name is Tanner....", "I am a full-stack web developer....", "My experience is with many technologies....", "...using the full Angular framework...", "to lightweight web apps.", "Tanner is always open to work! "];
+            var MsgArray = ["Hello, my name is Tanner....", "I am a full-stack web developer....", "My experience is with many technologies....", "...using the full Angular framework...", "to lightweight web apps.", "I am always open to work! "];
 
             function StartTyping() {
                 var id = document.getElementById("typing-text");
@@ -152,3 +167,5 @@
 </div>
 </div>
 </body>
+
+</html>

@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
+<div class="body"></div>
 
 <nav id="navbar" class="nav">
     <ul class="nav-list">
@@ -23,41 +24,46 @@
     </ul>
 </nav>
 
-<div class="body">
-    <div class="welcome-section" id="welcome-section">
-        <h1>Welcome</h1>
-        <p>Hi! I am Tanner a full-stack webDeveloper </p><br>
-        <p></p>
 
-        <p class="smallgrey">and a drone pilot</p>
 
+
+<div class="welcome-section" id="welcome-section">
+    <h1>Welcome</h1>
+    <p>Hi! I am Tanner a fullstack Web Developer</p><br>
+    <p class="smallgrey" style="margin-top: -20px;">
+    <div class="type_box" style="perspective:193px;-webkit-perspective:193px;">
+        <textarea id="typing-text" aria-label="typing text" readonly></textarea>
     </div>
 
+    </p>
 
-    <div id="hobbies" class="sec">
-
-        <h2>Angular<br>Javascript<br>SCSS</br>SQL<br>
-            React
-            <br>jQuery
-            <br>Bootstrap
-        </h2>
+</div>
 
 
-        <a> <iframe width="auto" height="315" class="videocontainer" src="https://www.youtube.com/embed/_qtbewGnqAU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe></a>
+<div id="hobbies" class="sec">
+
+    <h2>Angular<br>Javascript<br>SCSS</br>SQL<br>
+        React
+        <br>jQuery
+        <br>Bootstrap
+    </h2>
+
+
+    <a> <iframe id="video" width="auto" height="315" class="videocontainer"
+            src="https://www.youtube.com/embed/_qtbewGnqAU" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></a>
 
 
 
 
 
 
-    </div>
+</div>
 
-    <!--  images (or video) here -->
+<!--  images (or video) here -->
 
-    <!-- <img class="img-responsive" src="https://github.com/tannerpace/Dronelab/blob/master/img_snow.jpg?raw=true"
+<!-- <img class="img-responsive" src="https://github.com/tannerpace/Dronelab/blob/master/img_snow.jpg?raw=true"
         alt="model">
     <h2>Proficiency in Adode Creative Cloud<br></br></h2>
     <img class="img-responsive" src="https://github.com/tannerpace/Dronelab/blob/master/background1.jpg?raw=true"
@@ -70,46 +76,79 @@
     <img class="img-responsive"
         src="https://github.com/tannerpace/dronephotos/blob/master/smalladvertisment.jpg?raw=true" alt="park"> -->
 
-    <!--  image with link -->
-    <a target="_blank" href="https://github.com/tannerpace/Dronelab/blob/master/img_mountains.jpg?raw=true">
-        <img src="https://github.com/tannerpace/Dronelab/blob/master/beach.jpg?raw=true" alt="">
-    </a>
-
-    <!--  add video  -->
+<!--  image with link -->
 
 
-    <img src="https://github.com/tannerpace/Dronelab/blob/master/img_mountains.jpg?raw=true" alt="dronepic">
+<!--  add video  -->
 
-    <!-- ground -->
 
-    <section id="contact" class="contact-section">
-        <div class="contact-section-header">
-            <h2>Don't wait or hesitate...</h2>
-            <p>Get in touch...You like Kombucha?</p>
-        </div>
-        <div class="contact-links">
-            <a href="https://www.facebook.com/tanner.bleakley/" target="_blank" class="btn contact-details"><i
-                    class="fab fa-facebook-square"></i> Facebook</a>
-            <a id="profile-link" href="https://github.com/tannerpace" target="_blank" class="btn contact-details"><i
-                    class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.instagram.com/tannerpaceb/?hl=en
+<img src="https://github.com/tannerpace/Dronelab/blob/master/img_mountains.jpg?raw=true" alt="drone photo of park">
+
+<!-- ground -->
+
+<section id="contact" class="contact-section">
+    <div class="contact-section-header">
+        <h2>Don't wait or hesitate...</h2>
+        <p>Get in touch...You like Kombucha?</p>
+    </div>
+    <div class="contact-links">
+        <a href="https://www.facebook.com/tanner.bleakley/" target="_blank" class="btn contact-details"><i
+                class="fab fa-facebook-square"></i> Facebook</a>
+        <a id="profile-link" href="https://github.com/tannerpace" target="_blank" class="btn contact-details"><i
+                class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.instagram.com/tannerpaceb/?hl=en
 " target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Instagram</a>
-            <a href="mailto:tannerpace@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send an
-                email</a>
-            <a href="tel:8435139583" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
-        </div>
-    </section>
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
+        <a href="mailto:tannerpace@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send an
+            email</a>
+        <a href="tel:8435139583" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+    </div>
+</section>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-90px";
         }
-    </script>
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+<script>
+        (function () {
+            var CharacterPos = 0;
+            var MsgBuffer = "";
+            var TypeDelay = 100;
+            var NxtMsgDelay = 981;
+            var MsgIndex = 0;
+            var delay;
+            var MsgArray = ["Hello, my name is Tanner....", "I am a full-stack web developer....", "My experience is with many technologies....", "...using the full Angular framework...", "to lightweight web apps.", "Tanner is always open to work! "];
+
+            function StartTyping() {
+                var id = document.getElementById("typing-text");
+                if (CharacterPos != MsgArray[MsgIndex].length) {
+                    MsgBuffer = MsgBuffer + MsgArray[MsgIndex].charAt(CharacterPos);
+                    id.value = MsgBuffer + "_";
+                    delay = TypeDelay;
+                    id.scrollTop = id.scrollHeight;
+                } else {
+                    delay = NxtMsgDelay;
+                    MsgBuffer = "";
+                    CharacterPos = -1;
+                    if (MsgIndex != MsgArray.length - 1) {
+                        MsgIndex++;
+                    } else {
+                        MsgIndex = 0;
+                    }
+                }
+                CharacterPos++;
+                setTimeout(StartTyping, delay);
+            }
+            StartTyping();
+        })();
+
+</script>
 </div>
 </div>
+</body>

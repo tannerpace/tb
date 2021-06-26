@@ -1,3 +1,3 @@
 # tb
-files for tb .com
-this is my folder for my home page
+files for tb.com
+basic portfolio page with html css an js

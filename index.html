@@ -10,6 +10,9 @@
             crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+        </style>
     </head>
     <title>Tanner Bleakley</title>
 </head>
@@ -30,95 +33,69 @@
         <li>
             <a href="#welcome-section">About</a>
         </li>
-        <li>
-            <a href="https://codepen.io/tanctrl/full/bGBbyLW">Work</a>
-        </li>
+
         <li>
             <a href="#contact">Contact</a>
         </li>
     </ul>
 </nav>
 
-
-
+<!--welcome section -->
 
 <div class="welcome-section" id="welcome-section">
     <h1 class="wel-head">Welcome</h1>
-    <p>Hi! I am Tanner a fullstack Web Developer</p><br>
+
     <p class="smallgrey" style="margin-top: -20px;">
     <div class="type_box" style="perspective:193px;-webkit-perspective:193px;">
         <textarea id="typing-text" aria-label="typing text" readonly></textarea>
+    </div>
+    <div class="type_box" style="perspective:193px;-webkit-perspective:193px;">
+        <textarea id="typing-text2" aria-label="typing text" readonly placeholder="Liscenced Drone Pilot"></textarea>
     </div>
 
     </p>
 
 </div>
 
+<!-----hobies section for future use------->
 
-<div id="hobbies" class="sec">
+<!-- <div id="hobbies" class="sec"> -->
 
-    <h2>Angular<br>Javascript<br>SCSS</br>SQL<br>
+<!-- <h2>Angular<br>Javascript<br>SCSS</br>SQL<br>
         React
         <br>jQuery
         <br>Bootstrap
-    </h2>
+    </h2> -->
+<!-- </div> -->
 
-
-    <a> <iframe id="video" width="device" height="400px" class="videocontainer"
-            src="https://www.youtube.com/embed/_qtbewGnqAU" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; overflow-hidden; picture-in-picture"
-            allowfullscreen></iframe></a>
-
-
-
-
-
-
-</div>
-
-<!--  images (or video) here -->
-
-<!-- <img class="img-responsive" src="https://github.com/tannerpace/Dronelab/blob/master/img_snow.jpg?raw=true"
-        alt="model">
-    <h2>Proficiency in Adode Creative Cloud<br></br></h2>
-    <img class="img-responsive" src="https://github.com/tannerpace/Dronelab/blob/master/background1.jpg?raw=true"
-        alt="light_house">
-
-    <img class="img-responsive" src="https://github.com/tannerpace/dronephotos/blob/master/30ANGLEMAUICROP.jpg?raw=true"
-        alt="city">
-    <img class="img-responsive" src="https://github.com/tannerpace/dronephotos/blob/master/corner.jpg?raw=true"
-        alt="water">
-    <img class="img-responsive"
-        src="https://github.com/tannerpace/dronephotos/blob/master/smalladvertisment.jpg?raw=true" alt="park"> -->
-
-<!--  image with link -->
-
-
-<!--  add video  -->
-
+<a> <iframe id="video" width="device" height="400px" class="videocontainer"
+        src="https://www.youtube.com/embed/_qtbewGnqAU" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; overflow-hidden; picture-in-picture"
+        allowfullscreen></iframe></a>
 
 <img src="https://github.com/tannerpace/Dronelab/blob/master/img_mountains.jpg?raw=true" alt="drone photo of park">
 
-<!-- ground -->
+<!------------------------contact section---------------------------------------->
 
 <section id="contact" class="contact-section">
     <div class="contact-section-header">
         <h2>Don't wait or hesitate...</h2>
-        <p>Get in touch...You like Kombucha?</p>
+        <p>Get in touch...how do you like your coffee?</p>
     </div>
     <div class="contact-links">
-        <a href="https://www.facebook.com/tanner.bleakley/" target="_blank" class="btn contact-details"><i
-                class="fab fa-facebook-square"></i> Facebook</a>
+        <!-- <a href="https://www.facebook.com/tanner.bleakley/" target="_blank" class="btn contact-details"><i
+                class="fab fa-facebook-square"></i> Facebook</a> -->
         <a id="profile-link" href="https://github.com/tannerpace" target="_blank" class="btn contact-details"><i
                 class="fab fa-github"></i> GitHub</a>
-        <a href="https://www.instagram.com/tannerpaceb/?hl=en
-" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Instagram</a>
+        <!-- <a href="https://www.instagram.com/tannerpaceb/?hl=en
+" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Instagram</a> -->
         <a href="mailto:tannerpace@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send an
             email</a>
         <a href="tel:8435139583" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
     </div>
 </section>
 <script>
+    //////this is logic for hiding nav on scroll/////////
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
@@ -131,16 +108,51 @@
     }
 </script>
 <script>
+
+        /////////////////////////text-area2 is called using a timeout this is timed to start when first text area completes///////////
         (function () {
             var CharacterPos = 0;
             var MsgBuffer = "";
-            var TypeDelay = 125;
-            var NxtMsgDelay = 999;
+            var TypeDelay = 40;
+            var NxtMsgDelay = 1000000000;
             var MsgIndex = 0;
             var delay;
-            var MsgArray = ["Hello, my name is Tanner....", "I am a full-stack web developer....", "My experience is with many technologies....", "...using the full Angular framework...", "to lightweight web apps.", "I am always open to work! "];
+            var MsgArray = [" Hello,\n my name is Tanner.\nI am a full stack web developer."];
+            //////////Vars for text area2//////////////
+            var CharacterPos2 = 0;
+            var MsgBuffer2 = "";
+            var TypeDelay2 = 90;
+            var NxtMsgDelay2 = 10000000000;
+            var MsgIndex2 = 0;
+            var delay2;
+            var MsgArray2 = ["Javascript\nTypescript\nAngular\nBootstrap\nSCSS\nMONGO-DB\nJquery\nmySQL\n Lets work together! "];
 
+
+            function StartTyping2() {
+
+                var id2 = document.getElementById("typing-text2");
+                if (CharacterPos2 != MsgArray2[MsgIndex2].length) {
+                    MsgBuffer2 = MsgBuffer2 + MsgArray2[MsgIndex2].charAt(CharacterPos2);
+                    id2.value = MsgBuffer2 + "_";
+                    delay2 = TypeDelay2;
+                    id2.scrollTop = id2.scrollHeight;
+                } else {
+                    delay2 = NxtMsgDelay2;
+                    MsgBuffer2 = "";
+                    CharacterPos2 = -1;
+                    if (MsgIndex2 != MsgArray.length2 - 1) {
+                        MsgIndex2++;
+                    } else {
+                        MsgIndex2 = 0;
+                    }
+                }
+                CharacterPos2++;
+                setTimeout(StartTyping2, delay2);
+            };
+
+            /////////////////////////////function for controlling typing animation of first text area///////////
             function StartTyping() {
+
                 var id = document.getElementById("typing-text");
                 if (CharacterPos != MsgArray[MsgIndex].length) {
                     MsgBuffer = MsgBuffer + MsgArray[MsgIndex].charAt(CharacterPos);
@@ -160,7 +172,9 @@
                 CharacterPos++;
                 setTimeout(StartTyping, delay);
             }
+
             StartTyping();
+            setTimeout(StartTyping2, 3500);
         })();
 
 </script>

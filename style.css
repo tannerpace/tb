@@ -271,7 +271,7 @@ img {
 }
 
 .contact-section-header > h2 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 @media (max-width: 28.75em) {
@@ -373,41 +373,71 @@ footer i {
 
 #typing-text {
   color: black;
-  border: solid 0px #a8a8a8;
+  border: solid white 3px;
   font-weight: bold;
   text-align: center;
   font-family: Times New Roman;
   overflow: auto;
   background-color: white;
-  font-size: 29px;
+  font-size: 25px;
   padding: 2px;
   height: 156px;
   width: 343px;
-  text-shadow: -26px -10px 4px rgba(87, 80, 80, 0.98);
-  transform: rotateX(10deg) rotateY(7deg) rotateZ(-2deg);
+
   transform-origin: 50% 55% 0px;
   outline: none;
   resize: none;
   box-sizing: border-box;
   z-index: -1;
 }
-#typing-text {
-  font-size: 41px;
+
+#video {
+  padding-bottom: 200px;
+  height: 400px;
+  width: auto;
+}
+.wel-head {
+  font-family: "Holtwood One SC", serif;
+  font-size: large;
+}
+/* #typing-text2 {
+  color: black;
+  border: solid 0px;
+  font-weight: bold;
+  text-align: center;
+
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 25px;
   padding: 2px;
-  height: 156px;
-  width: 343px;
-  text-shadow: -26px -10px 4px rgba(255, 255, 255, 0.98);
-  transform: rotateX(10deg) rotateY(7deg) rotateZ(-2deg);
+
+  width: 100%;
   transform-origin: 50% 55% 0px;
   outline: none;
   resize: none;
   box-sizing: border-box;
-}
+  z-index: -1;
+  text-decoration: none;
+} */
+#typing-text2 {
+  color: rgb(0, 0, 0);
+  border: solid 1px white;
+  font-weight: bold;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto;
 
-#video {
-  min-width: 95%;
-  padding-bottom: 300px;
-}
-.wel-head {
-  font-family: "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  height: 1.5em;
+  width: 250px;
+
+  transform: rotateX(-4deg) rotateY(24deg);
+  transform-origin: 50% 80% -84px;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  resize: none;
+  text-decoration: none;
 }

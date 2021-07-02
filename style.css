@@ -432,7 +432,7 @@ footer i {
   height: 1.5em;
   width: 250px;
 
-  transform: rotateX(-4deg) rotateY(24deg);
+  transform: rotateX(-4deg) rotateY(0deg);
   transform-origin: 50% 80% -84px;
   outline: none;
   resize: none;
